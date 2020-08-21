@@ -1,0 +1,27 @@
+/* Header
+=====================*/
+.img-hero{
+  background-image: url(../img/image-banner.png);
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include respond-to('xs'){
+    height: 150px;
+  }
+
+  @include respond-to('s'){
+    height: 200px;
+  }
+
+  @include respond-to('m'){
+    height: 250px;
+  }
+
+  @include respond-to('m'){
+    height: 300px;
+  }
+
+}

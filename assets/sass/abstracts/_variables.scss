@@ -1,0 +1,29 @@
+// Variables
+//=====================
+
+// Color
+//=====================
+$light-blue:#92DCE5;
+$coral-pink:#EF6461;
+
+$dark-jungle: #1B1F21;
+$outer-space: #444749;
+$white: #FFF;
+// Typography
+//=====================
+
+$poppins: 'Poppins', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+$regular:400;
+$semi-bold:600;
+
+// Breakpoints
+//=====================
+$breakpoints: (
+        'xs': (max-width: 576px),
+        's': (min-width: 576px),
+        'm': (min-width: 768px),
+        'l': (min-width: 992px),
+        'xl': (min-width: 1200px),
+);
