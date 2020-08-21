@@ -167,7 +167,7 @@ template {
   padding: 0;
   margin: 0;
   width: 100%;
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
 }
 
 .container {
@@ -471,39 +471,39 @@ a, p, li, button {
   font-weight: 400;
 }
 
-.navbar-content {
+.navbar__content {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.navbar-content .text-logo {
+.navbar__content .text-logo {
   display: flex;
   font-weight: 400;
   font-size: 2.5em;
 }
-.navbar-content .text-logo span {
+.navbar__content .text-logo span {
   font-size: 0.3em;
   align-self: start;
   font-weight: 400;
 }
-.navbar-content ul {
+.navbar__content ul {
   list-style-type: none;
   display: inline;
 }
-.navbar-content ul li {
+.navbar__content ul li {
   display: inline-block;
   padding: 0 10px;
 }
-.navbar-content ul li a {
+.navbar__content ul li a {
   text-decoration: none;
   font-size: 1.5em;
   color: black;
 }
 @media (max-width: 576px) {
-  .navbar-content ul li {
+  .navbar__content ul li {
     display: none;
   }
-  .navbar-content ul li:last-child {
+  .navbar__content ul li:last-child {
     display: block;
   }
 }
@@ -512,7 +512,7 @@ a, p, li, button {
 =====================*/
 .img-hero {
   background-image: url(../img/image-banner.png);
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -533,15 +533,79 @@ a, p, li, button {
     height: 250px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .img-hero {
     height: 300px;
   }
 }
 
+.profile__header {
+  padding: 10px 0;
+  border-bottom: 1px solid #E8EBE4;
+}
+.profile__header .profile__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.profile__header .profile__content .profile__user {
+  display: flex;
+  align-items: center;
+}
+.profile__header .profile__content .profile__user div:last-child {
+  margin: 0 10px;
+}
+
 /* Main
 =====================*/
+.main {
+  padding: 30px 0;
+}
+
 /* Footer
 =====================*/
+.button {
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  text-align: center;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.primary__button {
+  background-color: #92DCE5;
+  color: #FFF;
+}
+.primary__button:hover {
+  background-color: #338d98;
+}
+
+.secondary__button {
+  background-color: #EF6461;
+  color: #FFF;
+}
+.secondary__button:hover {
+  background-color: #d54441;
+}
+
+.card .card__image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.thumbnail {
+  border-radius: 50%;
+}
+
+/* Size */
+.thumbnail_tiny {
+  max-width: 50px;
+}
+
+.thumbnail_normal {
+  max-width: 80px;
+}
 
 /*# sourceMappingURL=style.css.map */

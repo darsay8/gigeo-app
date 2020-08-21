@@ -1,27 +1,53 @@
 /* Header
 =====================*/
-.img-hero{
+.img-hero {
   background-image: url(../img/image-banner.png);
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @include respond-to('xs'){
+  @include respond-to('xs') {
     height: 150px;
   }
 
-  @include respond-to('s'){
+  @include respond-to('s') {
     height: 200px;
   }
 
-  @include respond-to('m'){
+  @include respond-to('m') {
     height: 250px;
   }
 
-  @include respond-to('m'){
+  @include respond-to('l') {
     height: 300px;
   }
 
 }
+
+.profile__header {
+  padding: 10px 0;
+  border-bottom: 1px solid $platinum;
+
+  .profile__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .profile__user {
+      display: flex;
+      align-items: center;
+
+      div:last-child {
+        margin: 0 10px;
+      }
+    }
+
+
+  }
+}
+
+
+
+

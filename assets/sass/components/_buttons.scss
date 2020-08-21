@@ -1,0 +1,27 @@
+.button{
+padding: .3rem 1rem;
+  cursor: pointer;
+  font-family: $raleway;
+  border: none;
+  text-align: center;
+  font-weight: $regular;
+  transition: .3s;
+}
+
+.primary__button{
+  background-color: $light-blue;
+  color: $white;
+
+  &:hover{
+   background-color: $sea;
+  }
+}
+
+.secondary__button{
+  background-color: $coral-pink;
+  color: $white;
+
+  &:hover{
+    background-color: $faded-red;
+  }
+}
