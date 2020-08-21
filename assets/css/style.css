@@ -167,7 +167,6 @@ template {
   padding: 0;
   margin: 0;
   width: 100%;
-  /*border: 1px solid gray;*/
 }
 
 .container {
@@ -199,7 +198,6 @@ template {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px 10px;
-  /* margin-bottom: 10px;*/
 }
 
 .col-xs-12 {
@@ -469,6 +467,8 @@ h1, h2, h3, h4, h5 {
 a, p, li, button {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  font-size: 0.8em;
+  color: #444749;
 }
 
 .navbar__content {
@@ -543,23 +543,76 @@ a, p, li, button {
   padding: 10px 0;
   border-bottom: 1px solid #E8EBE4;
 }
-.profile__header .profile__content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 .profile__header .profile__content .profile__user {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .profile__header .profile__content .profile__user div:last-child {
   margin: 0 10px;
 }
+.profile__header .profile__content .buttons {
+  display: none;
+}
+@media (min-width: 576px) {
+  .profile__header .profile__content .buttons {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .profile__header .profile__content {
+    padding: 0 15px;
+    width: 750px;
+    margin: 0 auto;
+  }
+  .profile__header .profile__content .profile__user {
+    justify-content: start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+  }
+  .profile__header .profile__content .buttons {
+    justify-content: end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+  }
+}
+@media (min-width: 992px) {
+  .profile__header .profile__content {
+    width: 970px;
+  }
+  .profile__header .profile__content .buttons {
+    justify-content: end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+  }
+}
+@media (min-width: 1200px) {
+  .profile__header .profile__content {
+    width: 1170px;
+  }
+}
 
 /* Main
 =====================*/
 .main {
-  padding: 30px 0;
+  padding: 30px 0 50px;
+}
+.main .main__title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .main .main__title {
+    text-align: left;
+  }
 }
 
 /* Footer
@@ -572,6 +625,8 @@ a, p, li, button {
   text-align: center;
   font-weight: 400;
   transition: 0.3s;
+  height: 30px;
+  margin-left: 10px;
 }
 
 .primary__button {
@@ -590,9 +645,15 @@ a, p, li, button {
   background-color: #d54441;
 }
 
+.card {
+  margin: 10px;
+}
 .card .card__image {
   object-fit: cover;
   width: 100%;
+}
+.card .card__title {
+  padding: 5px 0;
 }
 
 .thumbnail {

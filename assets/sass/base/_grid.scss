@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  /*border: 1px solid gray;*/
 }
 
 
@@ -30,7 +29,6 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px 10px;
- /* margin-bottom: 10px;*/
 }
 
 .col-xs-12 {

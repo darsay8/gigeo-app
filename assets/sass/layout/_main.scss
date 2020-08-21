@@ -1,5 +1,17 @@
 /* Main
 =====================*/
-.main{
-  padding: 30px 0;
+.main {
+  padding: 30px 0 50px;
+
+  .main__title {
+    padding-bottom: 30px;
+    text-align: center;
+    @include respond-to('m') {
+      text-align: left;
+    }
+
+  }
+
+
 }
+

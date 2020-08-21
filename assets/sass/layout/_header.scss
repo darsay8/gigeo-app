@@ -31,12 +31,11 @@
   border-bottom: 1px solid $platinum;
 
   .profile__content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
 
     .profile__user {
       display: flex;
+      justify-content: center;
       align-items: center;
 
       div:last-child {
@@ -44,8 +43,73 @@
       }
     }
 
+    .buttons {
+      display: none;
+
+
+    }
+
+    @include respond-to('xs') {
+
+    }
+
+    @include respond-to('s') {
+
+      .buttons {
+        display: flex;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+
+        justify-content: center;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+
+        align-items: center;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+      }
+    }
+
+    @include respond-to('m') {
+      padding: 0 15px;
+      width: 750px;
+      margin: 0 auto;
+
+      .profile__user {
+        justify-content: start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+      }
+
+      .buttons {
+        justify-content: end;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+      }
+    }
+
+    @include respond-to('l') {
+      width: 970px;
+
+
+      .buttons {
+        justify-content: end;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+      }
+    }
+
+    @include respond-to('xl') {
+      width: 1170px;
+
+    }
 
   }
+
+
 }
 
 
